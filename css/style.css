@@ -305,10 +305,19 @@ body {
 }
 .sliders .swiper-slide {
   text-align: center;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.sliders__container {
+  position: relative;
+}
+.sliders__container .swiper-button-next,
+.sliders__container .swiper-button-prev {
+  margin-top: calc(-200px - var(--swiper-navigation-size) / 2);
+}
+.sliders__container .swiper-button-prev {
+  transform: rotate(180deg);
 }
 .sliders__item {
   display: flex;
